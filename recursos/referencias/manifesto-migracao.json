@@ -1,0 +1,287 @@
+{
+  "data": "2026-10-09",
+  "repositorio": "data-project-toolkit",
+  "estado-inicial": {
+    "dbt Fundamentals - Datacamp.pdf": "3ed9b53606a82679a8ab15b217d2b6cd4bc9f5294189c7b5d4fc9072df902a3c",
+    "framework-analise-de-dados-lite-main.zip": "139cbbb5d31405614a266298ddac9c3c7d4a3a08a0ee41d05e42f142d411c757",
+    "framework-analise-de-dados-main.zip": "af6515c62547877a503a87b886671142d287f930f137011126980dd264efe908",
+    "GUIA_GERAL_ANALYTICS_ENGINEERING.pdf": "31f4bbff36a16cef1069e350c668cbaa020f5782d9519ad5c0d76280deb4e71f",
+    "README.md": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "The Analytics Development Lifecycle.pdf": "f6fd3c7cbeabd1651741d0713ccff72bc065496746f638b56030b74a97608c39",
+    "analise-de-dados/completo/README.md": "92c2d6250cdfcf904cf02b3e8cbbf6456367a8a19c64d742ad25a73924f66121",
+    "analise-de-dados/lite/README.md": "55e1aaf512157bda1ea72e079705269f07574be9be8420f3fb8aa24a4b7bb44c",
+    "analise-de-dados/completo/exemplos/README.md": "e29ddef5cfec54dc59d4649f6a0738844cbed41d5884745da1d8adc348ecf5f1",
+    "analise-de-dados/completo/guias/framework-analise-de-dados.md": "c167a1638d2aaaa6060196350abfeac65f351b3c21be689c0d24e4542abdd663",
+    "analise-de-dados/completo/templates/template-diagnostico-inicial.docx": "b624e44592cd4acf7fe1e7208c07ccddd96ee25e2ce46300bc2d21b0c3c6d812",
+    "analise-de-dados/completo/templates/template-framework-analise.docx": "261d320c2b987853b4817099ec3d89754ee1c0e9440eeabc42ad4ce6fe9ce1c0",
+    "analise-de-dados/completo/templates/template-resumo-executivo.docx": "df04e3d68c71bfe83e4140ce6bc632329a592c184f360f938f11061b4f5b8d37",
+    "analise-de-dados/lite/checklists/checklist-projeto-curto.md": "a6f71847f0eac2e4142b816db60baf0e60a121021519f2b30ac6acb338f31913",
+    "analise-de-dados/lite/guias/framework-lite.md": "5bb5051a4b1af5cd5cedcc83b958b247454c412369ac1598e6e447798f0d7da1",
+    "analise-de-dados/lite/imagens/diagrama-fluxo-de-dados.png": "7d591c01254a7f9243bd18088c9dca884cac5a737f8ff81015a61142c0c7a221",
+    "analise-de-dados/lite/templates/template-analise-lite.docx": "3379a7811167b12b4f322900051ef7d9ba355a057dfc6068c9778e35015aa003",
+    "analise-de-dados/lite/templates/template-analise-lite.md": "7bbf433af32a0473e705b3bc15b41e4b90e51cfa46bc99c5d01aa7d6c9cea160",
+    "analytics-engineering/checklists/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analytics-engineering/exemplos/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analytics-engineering/guias/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "analytics-engineering/templates/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compartilhado/guias/guia-primeiras-perguntas.md": "fc00d00ab317e22181dab70204490a02bf1a3032acc94431dcdbe09566a065bb",
+    "recursos/dataops/imagens/Ciclo de Vida Analítico ADLC.png": "d327a2ef936504a86b29ec36929553288e5f2bcdf08c533b4e5b1c0e6cdecde6"
+  },
+  "origens": [
+    {
+      "arquivo": "framework-analise-de-dados-lite-main.zip",
+      "entrada": "framework-analise-de-dados-lite-main/README.md",
+      "destino": "analise-de-dados/lite/README.md",
+      "sha256-origem": "55e1aaf512157bda1ea72e079705269f07574be9be8420f3fb8aa24a4b7bb44c",
+      "sha256-destino-inicial": "55e1aaf512157bda1ea72e079705269f07574be9be8420f3fb8aa24a4b7bb44c",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-lite-main.zip",
+      "entrada": "framework-analise-de-dados-lite-main/checklist-projeto-curto.md",
+      "destino": "analise-de-dados/lite/checklists/checklist-projeto-curto.md",
+      "sha256-origem": "a6f71847f0eac2e4142b816db60baf0e60a121021519f2b30ac6acb338f31913",
+      "sha256-destino-inicial": "a6f71847f0eac2e4142b816db60baf0e60a121021519f2b30ac6acb338f31913",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-lite-main.zip",
+      "entrada": "framework-analise-de-dados-lite-main/framework-lite.md",
+      "destino": "analise-de-dados/lite/guias/framework-lite.md",
+      "sha256-origem": "a781af223c2a0180aa8c94e90c4cc491139e4455b1db1b67d83d169fb9333edd",
+      "sha256-destino-inicial": "5bb5051a4b1af5cd5cedcc83b958b247454c412369ac1598e6e447798f0d7da1",
+      "equivalencia": "texto com finais de linha normalizados"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-lite-main.zip",
+      "entrada": "framework-analise-de-dados-lite-main/imagens/diagrama-fluxo-de-dados.png",
+      "destino": "analise-de-dados/lite/imagens/diagrama-fluxo-de-dados.png",
+      "sha256-origem": "7d591c01254a7f9243bd18088c9dca884cac5a737f8ff81015a61142c0c7a221",
+      "sha256-destino-inicial": "7d591c01254a7f9243bd18088c9dca884cac5a737f8ff81015a61142c0c7a221",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-lite-main.zip",
+      "entrada": "framework-analise-de-dados-lite-main/template-analise-lite.md",
+      "destino": "analise-de-dados/lite/templates/template-analise-lite.md",
+      "sha256-origem": "6d1fc1d6a347a74656dbe1522c4dce8a9fc1205ff3989a83bfd1c9c00fa29a6b",
+      "sha256-destino-inicial": "7bbf433af32a0473e705b3bc15b41e4b90e51cfa46bc99c5d01aa7d6c9cea160",
+      "equivalencia": "texto com finais de linha normalizados"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/README.md",
+      "destino": "analise-de-dados/completo/README.md",
+      "sha256-origem": "e1621abadd6d80fd5a8b540a95ac4e8bdc7032d6bf2cdd93fe03391af6dd8425",
+      "sha256-destino-inicial": "92c2d6250cdfcf904cf02b3e8cbbf6456367a8a19c64d742ad25a73924f66121",
+      "equivalencia": "texto com finais de linha normalizados"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/exemplos/README.md",
+      "destino": "analise-de-dados/completo/exemplos/README.md",
+      "sha256-origem": "513ccc691e6bb5f9a4076c6a64dbc04ab6267d76141d5058c6c40eb15782ecbf",
+      "sha256-destino-inicial": "e29ddef5cfec54dc59d4649f6a0738844cbed41d5884745da1d8adc348ecf5f1",
+      "equivalencia": "texto com finais de linha normalizados"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/guias/framework-analise-de-dados.md",
+      "destino": "analise-de-dados/completo/guias/framework-analise-de-dados.md",
+      "sha256-origem": "c167a1638d2aaaa6060196350abfeac65f351b3c21be689c0d24e4542abdd663",
+      "sha256-destino-inicial": "c167a1638d2aaaa6060196350abfeac65f351b3c21be689c0d24e4542abdd663",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/guias/guia-primeiras-perguntas.md.md",
+      "destino": "compartilhado/guias/guia-primeiras-perguntas.md",
+      "sha256-origem": "fc00d00ab317e22181dab70204490a02bf1a3032acc94431dcdbe09566a065bb",
+      "sha256-destino-inicial": "fc00d00ab317e22181dab70204490a02bf1a3032acc94431dcdbe09566a065bb",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/templates/template-diagnostico-inicial.docx",
+      "destino": "analise-de-dados/completo/templates/template-diagnostico-inicial.docx",
+      "sha256-origem": "b624e44592cd4acf7fe1e7208c07ccddd96ee25e2ce46300bc2d21b0c3c6d812",
+      "sha256-destino-inicial": "b624e44592cd4acf7fe1e7208c07ccddd96ee25e2ce46300bc2d21b0c3c6d812",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/templates/template-framework-analise.docx",
+      "destino": "analise-de-dados/completo/templates/template-framework-analise.docx",
+      "sha256-origem": "261d320c2b987853b4817099ec3d89754ee1c0e9440eeabc42ad4ce6fe9ce1c0",
+      "sha256-destino-inicial": "261d320c2b987853b4817099ec3d89754ee1c0e9440eeabc42ad4ce6fe9ce1c0",
+      "equivalencia": "bytes"
+    },
+    {
+      "arquivo": "framework-analise-de-dados-main.zip",
+      "entrada": "framework-analise-de-dados-main/templates/template-resumo-executivo.docx",
+      "destino": "analise-de-dados/completo/templates/template-resumo-executivo.docx",
+      "sha256-origem": "df04e3d68c71bfe83e4140ce6bc632329a592c184f360f938f11061b4f5b8d37",
+      "sha256-destino-inicial": "df04e3d68c71bfe83e4140ce6bc632329a592c184f360f938f11061b4f5b8d37",
+      "equivalencia": "bytes"
+    }
+  ],
+  "movimentos": [
+    {
+      "origem": "framework-analise-de-dados-main.zip",
+      "destino": "recursos/referencias/originais/framework-analise-de-dados-main.zip",
+      "sha256": "af6515c62547877a503a87b886671142d287f930f137011126980dd264efe908"
+    },
+    {
+      "origem": "framework-analise-de-dados-lite-main.zip",
+      "destino": "recursos/referencias/originais/framework-analise-de-dados-lite-main.zip",
+      "sha256": "139cbbb5d31405614a266298ddac9c3c7d4a3a08a0ee41d05e42f142d411c757"
+    },
+    {
+      "origem": "GUIA_GERAL_ANALYTICS_ENGINEERING.pdf",
+      "destino": "recursos/referencias/materiais/guia-geral-analytics-engineering.pdf",
+      "sha256": "31f4bbff36a16cef1069e350c668cbaa020f5782d9519ad5c0d76280deb4e71f"
+    },
+    {
+      "origem": "dbt Fundamentals - Datacamp.pdf",
+      "destino": "recursos/referencias/materiais/dbt-fundamentals-datacamp.pdf",
+      "sha256": "3ed9b53606a82679a8ab15b217d2b6cd4bc9f5294189c7b5d4fc9072df902a3c"
+    },
+    {
+      "origem": "The Analytics Development Lifecycle.pdf",
+      "destino": "recursos/referencias/materiais/the-analytics-development-lifecycle.pdf",
+      "sha256": "f6fd3c7cbeabd1651741d0713ccff72bc065496746f638b56030b74a97608c39"
+    },
+    {
+      "origem": "recursos/dataops/imagens/Ciclo de Vida Analítico ADLC.png",
+      "destino": "recursos/dataops/imagens/ciclo-de-vida-analitico-adlc.png",
+      "sha256": "d327a2ef936504a86b29ec36929553288e5f2bcdf08c533b4e5b1c0e6cdecde6"
+    }
+  ],
+  "normalizacoes": [
+    {
+      "arquivo": "analytics-engineering/checklists/.gitkeep",
+      "acao": "Removido marcador vazio; diretório receberá documentação útil."
+    },
+    {
+      "arquivo": "analytics-engineering/guias/.gitkeep",
+      "acao": "Removido marcador vazio; diretório receberá documentação útil."
+    },
+    {
+      "arquivo": "analytics-engineering/templates/.gitkeep",
+      "acao": "Removido marcador vazio; diretório receberá documentação útil."
+    },
+    {
+      "arquivo": "analytics-engineering/exemplos/.gitkeep",
+      "acao": "Removido marcador vazio; diretório receberá documentação útil."
+    },
+    {
+      "arquivo": "analise-de-dados/completo/guias/framework-analise-de-dados.md",
+      "acao": "Links Obsidian convertidos para navegação relativa; referências em exemplos de texto mantidas como rótulos; fragmento truncado repetido ao final do framework removido."
+    },
+    {
+      "arquivo": "compartilhado/guias/guia-primeiras-perguntas.md",
+      "acao": "Links Obsidian convertidos para navegação relativa; referências em exemplos de texto mantidas como rótulos; fragmento truncado repetido ao final do framework removido."
+    }
+  ],
+  "historicos-git": [
+    {
+      "origem": "analise-de-dados/completo/.git",
+      "arquivo": "recursos/referencias/originais/framework-completo-metadados-git.zip",
+      "sha256": "f6a67d5463d6b3db79b8ea6fa7319c801d132e5db70050f76d2731d9f7be33c2",
+      "arquivos-preservados": 37,
+      "sha256-metadados": {
+        "COMMIT_EDITMSG": "844ad5443f5547648a3ed45ffff0e69615a5009c6eb22cd64032ca8f55378d3b",
+        "config": "a5b6b0646bec69d917e716d349395b3182b5d535818c22aea145fbc0d7ed9ca9",
+        "description": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+        "HEAD": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80",
+        "hooks/applypatch-msg.sample": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+        "hooks/commit-msg.sample": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+        "hooks/fsmonitor-watchman.sample": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+        "hooks/post-update.sample": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+        "hooks/pre-applypatch.sample": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+        "hooks/pre-commit.sample": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+        "hooks/pre-merge-commit.sample": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+        "hooks/pre-push.sample": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+        "hooks/pre-rebase.sample": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+        "hooks/pre-receive.sample": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+        "hooks/prepare-commit-msg.sample": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+        "hooks/push-to-checkout.sample": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+        "hooks/sendemail-validate.sample": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+        "hooks/update.sample": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+        "index": "bd4d2e25d41aa7a7b7d33d051d94244325c2e6bae96f0416ceffbfce6bbb78df",
+        "info/exclude": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+        "logs/HEAD": "2f7d43c33906998fc7c6ae56164c41f135de579965788f0fe45bee5b85210741",
+        "logs/refs/heads/main": "f9b73a923c65c309e44f6b9925c1ada9889d9a8d6080a00f7a10ad60060c7d73",
+        "logs/refs/remotes/origin/main": "fe1d58ecfb2c058a2c6897c03071afad4a7128ae7e5c601887881133455fcd5a",
+        "objects/00/2cabea39379f3fb6a7f9919b6da9f92d45401c": "a07f1bde83f8ff528ab34210296b980b8afefa8e52e495c3dc2ef013ae631c5b",
+        "objects/4b/a78d0df24b172c59e6fbed02dd8ae6de97422e": "3ed97d67268c334be1b8b4d695001c9601c3bf2dfefecbb9ee08e9af8c7471e2",
+        "objects/50/075c14bf2f1d6d35cb41aa160796fa6a7ddfa1": "152396fba6b6bd8fdc6d301eda2fdaed5fc31843f2d9bb71e3d83d2d9cb71ec1",
+        "objects/65/71832c93f602999d88c328a7d7ef25e01d3ed1": "258cc2ffc557b875f6642e259b2a957e43b03bb6084adc40e51807343356a496",
+        "objects/7a/d5bc08b5d7fd15d0ac3c6a5adff3b494396ee3": "51a5cd4a45371b3d1a8552ec795bc078bf6c853dfca12795c86ad24c2b82ff2f",
+        "objects/80/7a811df216a1256588dbe8b0a1e6eb1b33cbd5": "82c827a67b6543a09921eecffa483d362990939e023298184326707b21a5972f",
+        "objects/82/9b6c4001149a23f3995f1b26bf560879155695": "38467fd54ffacfae320749b829be56bb68680ca1a4c9026b892e28b5c50dc2fc",
+        "objects/a9/5119cb4cfe319c08e9b967820be82aeed33d32": "748420ba750d85e0fbdca4e933492725ca707df5db045e79c51e1615652979c2",
+        "objects/ae/6878879d843a424b5e2245ed3efbe5383182cd": "ee72b3f6730ffdf607c6ee037dc4cf3f3b7afdae47b1860f57db727dee22ab64",
+        "objects/af/5a6e0d7f604c2ea8a6f31a6d1ca938484869e5": "1f8f56a91bd5ff1f19d148c6d25530b70e12add7d1f9cf8c0130040c68b1552c",
+        "objects/c2/ef34ffb999acdde5ae5bc1bf5a2f6f1e322d94": "8588281d51ea6917e00413ed77f99d04065dd622cf257361e758e71a2a32706c",
+        "objects/ec/bf16b96e6cebee060fff6dd0622d466e87be87": "41a6f3995a1ecf8db5a5935cf753b6996ce3f554632a719f10fd39bc0bd3fb91",
+        "refs/heads/main": "70dff490d60172a5604aebc19730f7f1e571d0c55836306a254ad4fda4d16a4d",
+        "refs/remotes/origin/main": "70dff490d60172a5604aebc19730f7f1e571d0c55836306a254ad4fda4d16a4d"
+      },
+      "head": "ae6878879d843a424b5e2245ed3efbe5383182cd",
+      "validacao-git-fsck": "Aprovada; sem erros",
+      "destino-ativo": "Metadados retirados da pasta ativa; backup permanente no arquivo ZIP indicado."
+    },
+    {
+      "origem": "analise-de-dados/lite/.git",
+      "arquivo": "recursos/referencias/originais/framework-lite-metadados-git.zip",
+      "sha256": "8f1247909837669789c6ae1ced6fbabcb0b72b6140d74bf673ad164ae2617fa1",
+      "arquivos-preservados": 40,
+      "sha256-metadados": {
+        "COMMIT_EDITMSG": "013a428fd3b70c8a944e50044ce48e5f01d2832053af8962afee9788c4c59b79",
+        "config": "ecde23f8779fad3f7a68bbb7885dcb98824a3b191616cb766cf50c82e7b428d5",
+        "description": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+        "HEAD": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80",
+        "hooks/applypatch-msg.sample": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+        "hooks/commit-msg.sample": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b",
+        "hooks/fsmonitor-watchman.sample": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0",
+        "hooks/post-update.sample": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+        "hooks/pre-applypatch.sample": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+        "hooks/pre-commit.sample": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+        "hooks/pre-merge-commit.sample": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+        "hooks/pre-push.sample": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+        "hooks/pre-rebase.sample": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+        "hooks/pre-receive.sample": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+        "hooks/prepare-commit-msg.sample": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+        "hooks/push-to-checkout.sample": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+        "hooks/sendemail-validate.sample": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+        "hooks/update.sample": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+        "index": "f23c750bd8d334359201dd52c4174d53d432a67dd489d0ada8f0dabe6e8da77f",
+        "info/exclude": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+        "logs/HEAD": "6007766d5197f9c50987e18286ef3b901f3a3a621e7f2d524f98f37cc35ac24f",
+        "logs/refs/heads/main": "33d2be2c646b99ec61cfc4c681f6f0ed24a7f884b7d9ba395fd4f705d7259839",
+        "logs/refs/remotes/origin/main": "fbf70b240ed121f757d3feb33191247f84eb75cedb54fb0a8179d1373e7abff5",
+        "objects/31/df94bcce85b43521ce97cd221e92582bb2b72b": "24cdd423a2842ba36831249205dd366af3fd343c878206364b7fe2593c8230f9",
+        "objects/58/390d3b6e89b2d25545f5090a11a2305f9f32ae": "aa311e84c6185455eb5d59b019741e192a6a8f41acb58a07dbc9aaa6fb6acbb8",
+        "objects/77/a03c3f84a339a074a91970565adb37448742b8": "edd787fd8e7609d3bad9f789e47cbd8aa607c4e09f5acd71f5de2cdccc6f02f3",
+        "objects/a1/cc0544304cf15c82de826b0a4cfc362946620d": "3937690a1dd92781880585fc049dbf0eb7cad897f038f1acc14136d5fec0f017",
+        "objects/ac/52c2801cd2e19ab1b60acf7a2772f299e720f2": "ba348497f190a288fed35a9ece6a48af973918e3c1b5a475a7c224c5532fbce4",
+        "objects/b3/dfa1e5af894d10b5d212e254ef0829d9ce2cef": "766fc95a93d93a3354013d7de052e330c15c940d6899410785185f5c23f6eae2",
+        "objects/b7/229cb3d97d1405dab47d36b9ddbd637efb5df7": "33faf8bd47538d59283a0b11210f0ec91b9914352b78613cea0a9d1a2226ffa7",
+        "objects/bc/5573abe71243f69065e0d185bb72795dc9f2ee": "9e8665810a741a91f52b47543cd694297a7bf32e1751492f21bc0b7000fb759d",
+        "objects/c7/b9c8c3c4791531dad045d0a64df2982a820922": "0ff2e5ffe89acdbefb7eb2b8b2b4e0d54b8a7649712d32c33fc0ef58db71cc16",
+        "objects/c9/85a15750b754efec55b57ce3c7a8b972b061d7": "b9ef68378eb79d190d6ea092b8f273ee8ebbfc8d6997fc230475daa571221120",
+        "objects/e1/e6668518dd05961b351c0da256729ac27dc6d3": "fcddfd9aaa0ef2730685463bef2b740cb4ca0066e410ca879ac0e1f5857d17e8",
+        "objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391": "164c5fa8067facf1a43f09ce3d0e35ebf53a7f5723ecbf15a8667cfc53c26f6c",
+        "objects/f2/e2b54f01f810b5cd8f6857edcfad8865bcac21": "bd29dd76a0433f71156c982b4c034326c01a6b64efa366934c706f03930dadce",
+        "objects/f6/cfd1ccf629b97a5fbe4ef95e52f78332a4a403": "140a58382e3145fdf2162426050223dd43e6b8abd74f7dbe3b5f71e8dd82da73",
+        "objects/f9/b7358ed600c19e747567943a443867e2b4ba20": "c30e0f2e2f93819be318b6d272510f48199f161e0770a8128d0c87ebddd00cf7",
+        "refs/heads/main": "4ed79c5d151d153d416ad0b092bc30902267a0430d2d7283e70c451ec593b3b3",
+        "refs/remotes/origin/main": "4ed79c5d151d153d416ad0b092bc30902267a0430d2d7283e70c451ec593b3b3"
+      },
+      "head": "f9b7358ed600c19e747567943a443867e2b4ba20",
+      "validacao-git-fsck": "Aprovada; sem erros",
+      "destino-ativo": "Metadados retirados da pasta ativa; backup permanente no arquivo ZIP indicado."
+    }
+  ]
+}
