@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Tabelas carregadas pelo Python (src/load) a partir do Bronze.
+    tables:
+      - name: example_source__readings
+        description: Leituras brutas por estação e data de referência.
+        columns:
+          - name: reading_id
+            data_tests:
+              - not_null
+              - unique

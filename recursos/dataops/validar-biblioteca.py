@@ -1,4 +1,4 @@
-"""Valida documentação local e originais sem modificar arquivos ou acessar rede."""
+"""Valida a documentação local (links, âncoras, nomes, arquivos vazios) sem modificar arquivos nem acessar a rede."""
 
 from collections import defaultdict
 from hashlib import sha256
@@ -11,6 +11,14 @@ from zipfile import ZipFile
 
 
 ROOT = Path(__file__).resolve().parents[2]
+# O template de projeto contém código executável (Makefile, .gitignore, nomes em
+# snake_case, .gitkeep vazios) e fica fora das regras de nome, arquivo vazio e
+# duplicidade da biblioteca de documentação. Os links dos seus .md continuam validados.
+TEMPLATE = ROOT / "template-projeto"
+
+
+def in_template(path):
+    return path.is_relative_to(TEMPLATE)
 
 
 def digest(path):
@@ -102,6 +110,8 @@ def main():
 
     groups = defaultdict(list)
     for path in files:
+        if in_template(path):
+            continue
         if path.stat().st_size == 0:
             errors.append("Arquivo vazio: " + path.relative_to(ROOT).as_posix())
         groups[digest(path)].append(path.relative_to(ROOT).as_posix())
@@ -113,50 +123,15 @@ def main():
                 if bad:
                     errors.append("CRC inválido: " + str(path) + ": " + bad)
     for directory in ROOT.rglob("*"):
-        if directory.is_dir() and ".git" not in directory.relative_to(ROOT).parts:
+        if directory.is_dir() and ".git" not in directory.relative_to(ROOT).parts and not in_template(directory):
             if not any(directory.iterdir()):
                 errors.append("Diretório vazio: " + directory.relative_to(ROOT).as_posix())
             if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", directory.name):
                 errors.append("Nome de diretório fora da convenção: " + directory.relative_to(ROOT).as_posix())
 
-    manifest = json.loads((ROOT / "recursos/referencias/manifesto-migracao.json").read_text(encoding="utf-8"))
-    movements = {m["origem"]: m for m in manifest["movimentos"]}
-    binaries = 0
-    for source, expected in manifest["estado-inicial"].items():
-        if Path(source).suffix.lower() not in {".zip", ".pdf", ".docx", ".png", ".jpg", ".jpeg"}:
-            continue
-        destination = ROOT / movements.get(source, {}).get("destino", source)
-        binaries += 1
-        if not destination.exists() or digest(destination) != expected:
-            errors.append("Hash de binário divergente: " + destination.relative_to(ROOT).as_posix())
-    for entry in manifest["origens"]:
-        archive_path = ROOT / movements[entry["arquivo"]]["destino"]
-        with ZipFile(archive_path) as archive:
-            data = archive.read(entry["entrada"])
-        if sha256(data).hexdigest() != entry["sha256-origem"]:
-            errors.append("Origem divergente: " + entry["entrada"])
-        destination = ROOT / entry["destino"]
-        if not destination.exists() or destination.stat().st_size == 0:
-            errors.append("Destino original ausente/vazio: " + entry["destino"])
-        elif destination.suffix != ".md" and digest(destination) != entry["sha256-origem"]:
-            errors.append("Destino binário original divergente: " + entry["destino"])
-
-    metadata_count = 0
-    for history in manifest.get("historicos-git", []):
-        backup = ROOT / history["arquivo"]
-        if not backup.exists() or digest(backup) != history["sha256"]:
-            errors.append("Backup de metadados Git divergente: " + history["arquivo"])
-            continue
-        with ZipFile(backup) as archive:
-            for name, expected in history["sha256-metadados"].items():
-                metadata_count += 1
-                if sha256(archive.read(".git/" + name)).hexdigest() != expected:
-                    errors.append("Metadado Git divergente: " + history["arquivo"] + ": " + name)
-
     duplicates = [paths for paths in groups.values() if len(paths) > 1]
     result = {"arquivos": len(files), "markdown": len(texts), "links-locais": local_links,
-              "binarios-preservados": binaries, "entradas-originais": len(manifest["origens"]),
-              "metadados-git-preservados": metadata_count, "repositorios-embutidos": len(nested_git),
+              "repositorios-embutidos": len(nested_git),
               "duplicacoes-de-bytes": duplicates, "erros": errors}
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 1 if errors or duplicates else 0

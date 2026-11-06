@@ -55,7 +55,7 @@ Perguntas essenciais:
 
 ## Modelo
 
-[`template-diagnostico-inicial.docx`](templates/template-diagnostico-inicial.docx)
+[`template-diagnostico-inicial.md`](templates/template-diagnostico-inicial.md)
 
 ---
 
@@ -81,7 +81,7 @@ Inclui:
 
 ## Modelo
 
-[`template-framework-analise.docx`](templates/template-framework-analise.docx)
+[`template-framework-analise.md`](templates/template-framework-analise.md)
 
 ---
 
@@ -93,7 +93,7 @@ Transformar análise em decisão:
 
 ## Modelo
 
-[`template-resumo-executivo.docx`](templates/template-resumo-executivo.docx)
+[`template-resumo-executivo.md`](templates/template-resumo-executivo.md)
 
 Inclui:
 
@@ -150,7 +150,7 @@ Um método pessoal que evolui com a prática:
 
 ## Navegação no toolkit
 
-Use o Completo quando houver múltiplas hipóteses, fontes, recortes ou necessidade de comunicação executiva. Os três templates Word acima foram preservados sem alteração de bytes. O guia contém também template de nota e checklists de investigação e encerramento, evitando documentos repetidos.
+Use o Completo quando houver múltiplas hipóteses, fontes, recortes ou necessidade de comunicação executiva. Os três templates acima estão em Markdown, para serem versionados e comparados no Git. O guia contém também template de nota e checklists de investigação e encerramento, evitando documentos repetidos.
 
 - [Problema de negócio](../../compartilhado/guias/definicao-problema-negocio.md), para delimitar a decisão.
 - [Qualidade de dados](../../compartilhado/guias/qualidade-de-dados.md), para aprofundar riscos encontrados no diagnóstico.

@@ -1,0 +1,20 @@
+# Ambiente e segredos
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Dados e banco local: reproduzíveis pelo pipeline, não vão para o Git
+data/bronze/*
+!data/bronze/.gitkeep
+warehouse/*
+!warehouse/.gitkeep
+
+# Artefatos do dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Gerado pelo dbt (id local do usuário)
+dbt/.user.yml

@@ -1,0 +1,10 @@
+# Sem credenciais: DuckDB local. Rode o dbt sempre da raiz do repositório
+# (o Makefile já passa --project-dir dbt --profiles-dir dbt).
+analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('WAREHOUSE_PATH', 'warehouse/analytics.duckdb') }}"
+      schema: main
+      threads: 4

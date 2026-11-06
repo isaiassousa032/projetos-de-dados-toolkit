@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_daily_readings
+    description: >
+      Uma linha por estação por data de referência. Medidas: contagem, soma e
+      média das leituras. A unicidade do grão é testada em
+      tests/assert_fct_daily_readings_unique_grain.sql.
+    columns:
+      - name: reference_date
+        data_tests: [not_null]
+      - name: station
+        data_tests: [not_null]
+      - name: readings_count
+        data_tests: [not_null]

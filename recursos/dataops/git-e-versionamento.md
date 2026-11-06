@@ -28,4 +28,4 @@ Explique problema, comportamento resultante, consumidores e validação. Uma rev
 
 Evite misturar credenciais, ajustes de infraestrutura e alteração de método na mesma mudança sem relação clara. Não reescreva histórico compartilhado nem descarte trabalho local sem autorização.
 
-Referência: [documentação oficial do Git](https://git-scm.com/doc). Consulte [CI/CD](ci-cd.md) e [convenções](../../compartilhado/guias/convencoes-nomenclatura-documentacao.md).
+Referência: [documentação oficial do Git](https://git-scm.com/doc). Consulte [CI/CD](ci-cd-e-monitoramento.md) e [convenções](../../compartilhado/guias/convencoes-nomenclatura-documentacao.md).

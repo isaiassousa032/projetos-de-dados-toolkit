@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_example_source__readings
+    description: "Uma linha por leitura (reading_id) vinda da fonte de exemplo."
+    columns:
+      - name: reading_id
+        data_tests: [not_null, unique]
+      - name: reference_date
+        data_tests: [not_null]
+      - name: station
+        data_tests: [not_null]

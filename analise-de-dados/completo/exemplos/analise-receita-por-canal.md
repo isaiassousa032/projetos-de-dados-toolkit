@@ -6,7 +6,7 @@ Caso fictício e pequeno para demonstrar o método Completo. Não representa pro
 
 A equipe quer decidir onde investigar uma redução de receita. A base hipotética contém itens de pedidos, com pedido, canal, data, status e receita do item. Grão: item identificado dentro de um pedido. A análise será por canal em dois meses completos, na mesma moeda, excluindo cancelados em ambos.
 
-Diagnóstico: chaves únicas, ausência de nulos em canal/valor, cobertura equivalente e totais reconciliados são condições assumidas do exemplo, não verificações executadas sobre uma base real. Em um projeto, registre a evidência dessas condições no [diagnóstico inicial](../templates/template-diagnostico-inicial.docx).
+Diagnóstico: chaves únicas, ausência de nulos em canal/valor, cobertura equivalente e totais reconciliados são condições assumidas do exemplo, não verificações executadas sobre uma base real. Em um projeto, registre a evidência dessas condições no [diagnóstico inicial](../templates/template-diagnostico-inicial.md).
 
 ## Pergunta e hipótese
 
@@ -32,4 +32,4 @@ Limitações: dois meses não demonstram sazonalidade, cobertura assumida precis
 
 ## Encerrar o recorte
 
-A pergunta sobre contribuição por canal está respondida no cenário fictício. A investigação causal e a decomposição do online são próximos recortes. Use o [template de resumo executivo](../templates/template-resumo-executivo.docx) para apresentar decisão, evidência e limites em um projeto real.
+A pergunta sobre contribuição por canal está respondida no cenário fictício. A investigação causal e a decomposição do online são próximos recortes. Use o [template de resumo executivo](../templates/template-resumo-executivo.md) para apresentar decisão, evidência e limites em um projeto real.

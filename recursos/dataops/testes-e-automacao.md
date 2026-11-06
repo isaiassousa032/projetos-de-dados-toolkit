@@ -8,7 +8,7 @@ Automatize verificações que serão repetidas ou cuja falha compromete consumo.
 - **Estado dos dados:** chave, domínio, referência, cobertura e atualidade.
 - **Reconciliação:** mesma métrica calculada a partir de origem ou método independente.
 - **Integração:** contrato entre ingestão, transformação e consumidor.
-- **Documentação:** destinos de links, arquivos vazios e integridade dos originais.
+- **Documentação:** destinos de links, âncoras e arquivos vazios.
 
 Uma cópia da fórmula do código no teste pode reproduzir o mesmo erro. Comece por regras e amostras cujo resultado possa ser explicado manualmente. Para código Python, inclua DataFrames pequenos com grupos desiguais, índices duplicados ou tipos inesperados quando esses riscos forem pertinentes.
 
@@ -20,7 +20,7 @@ Em dbt, consulte [testes e qualidade](../../analytics-engineering/guias/testes-e
 
 ## Validação desta biblioteca
 
-O [validador local](validar-biblioteca.py) usa somente a biblioteca padrão do Python para conferir links Markdown locais, âncoras, arquivos vazios, nomes, duplicação de bytes e hashes de origem. Ele não altera arquivos nem acessa a rede.
+O [validador local](validar-biblioteca.py) usa somente a biblioteca padrão do Python para conferir links Markdown locais, âncoras, arquivos vazios, nomes e duplicação de bytes. Ele não altera arquivos nem acessa a rede. A pasta `template-projeto/`, que contém código executável, fica fora das regras de nome e de arquivo vazio, mas seus links Markdown continuam validados.
 
 Execute a partir da raiz:
 
@@ -28,4 +28,4 @@ Execute a partir da raiz:
 python recursos/dataops/validar-biblioteca.py
 ```
 
-Confirme também o [relatório de migração](../referencias/relatorio-migracao.md). O validador não substitui revisão editorial, leitura visual dos binários ou execução de exemplos em um projeto real.
+O validador não substitui revisão editorial nem a execução de exemplos em um projeto real.

@@ -23,21 +23,10 @@ Reverter Git não restaura linhas alteradas. A recuperação pode exigir reconst
 
 ## Orquestração opcional com Airflow
 
-Comece validando ingestão e transformações com execução simples. Adote Airflow quando houver coordenação entre sistemas, retries, concorrência, backfills ou requisitos operacionais que justifiquem a manutenção.
-
-Planeje tarefas por fronteira recuperável: confirmar ingestão → validar entrada → transformar/testar → verificar consumo. Use intervalos de dados explícitos e destinos determinísticos; uma retry deve produzir o mesmo estado esperado. Evite lógica pesada no carregamento do DAG e mantenha credenciais em conexões/segredos autorizados. [Boas práticas oficiais do Airflow](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html).
+Comece validando ingestão e transformações com execução simples; adote Airflow quando houver coordenação entre sistemas, retries, concorrência, backfills ou requisitos operacionais que justifiquem a manutenção. Princípios, uma DAG testada e erros comuns estão no [guia de orquestração com Airflow](../../engenharia-de-dados/guias/orquestracao-airflow.md).
 
 ## Sinais e resposta
 
-| Sinal | Pergunta | Resposta esperada |
-|---|---|---|
-| Execução | O job falhou ou excedeu duração? | Diagnosticar componente e retentar com segurança |
-| Freshness | O dado chegou no horário de consumo? | Verificar origem, ingestão e atraso |
-| Cobertura | O período/população está completo? | Reconciliação e contenção de resultado parcial |
-| Qualidade | Regras críticas foram violadas? | Bloquear publicação afetada e corrigir causa |
-| Consumo | Consultas/BI usam a versão esperada? | Validar contrato e transição |
-| Custo | Varredura ou duração cresceu além do previsto? | Investigar volume, plano e materialização |
-
-Defina limite, dono, canal e procedimento de resposta para cada alerta. Priorize impacto ao consumidor; não transforme todo desvio em notificação repetida. Registre incidentes com início, detecção, impacto, contenção, recuperação e ação preventiva.
+Sinais de execução, freshness, cobertura, qualidade, consumo e custo, com a resposta a incidentes, estão em [CI/CD e monitoramento](../../recursos/dataops/ci-cd-e-monitoramento.md#monitoramento). Em dbt, freshness é uma verificação separada de `dbt build`: execute a correspondente à versão adotada.
 
 Consulte [DataOps](../../recursos/dataops/README.md) e o [checklist de deploy e entrega](../checklists/deploy-entrega-final.md).

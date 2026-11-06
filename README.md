@@ -1,8 +1,10 @@
 # projetos-de-dados-toolkit
 
-Biblioteca de metodologias, guias, templates, checklists e referências para projetos de **Análise de Dados** e **Analytics Engineering**. Reúne os frameworks Lite e Completo existentes e um framework para desenvolver dados analíticos confiáveis, documentados e reutilizáveis.
+Biblioteca de metodologias, guias, templates, checklists e referências para projetos de **Análise de Dados**, **Engenharia de Dados** e **Analytics Engineering**. Reúne os frameworks Lite e Completo existentes e um framework para desenvolver dados analíticos confiáveis, documentados e reutilizáveis.
 
 O toolkit orienta projetos de portfólio e profissionais com SQL, Python, Power BI, dbt e Data Warehouses. Os códigos, dados e configurações de cada projeto ficam em repositórios próprios. Airflow e agentes de IA são recursos opcionais, adotados conforme a necessidade.
+
+> **Primeira vez aqui, ou sem saber por onde começar? Leia [comece-aqui.md](comece-aqui.md).** Ele escolhe o caminho e diz o que fazer hoje.
 
 ## Índice
 
@@ -31,11 +33,15 @@ O [Framework Lite](analise-de-dados/lite/README.md) organiza **Entender → Perg
 
 ### Análise de Dados — Completo
 
-O [Framework Completo](analise-de-dados/completo/README.md) organiza **Entender → Analisar → Comunicar → Decidir**. Após o diagnóstico inicial, transforma o problema em perguntas, subperguntas e hipóteses, registra evidências e comunica insights e recomendações. Inclui os templates Word originais de diagnóstico, aplicação e resumo executivo.
+O [Framework Completo](analise-de-dados/completo/README.md) organiza **Entender → Analisar → Comunicar → Decidir**. Após o diagnóstico inicial, transforma o problema em perguntas, subperguntas e hipóteses, registra evidências e comunica insights e recomendações. Inclui templates em Markdown de diagnóstico, aplicação e resumo executivo.
 
 ### Analytics Engineering
 
 O [Framework de Analytics Engineering](analytics-engineering/README.md) orienta requisitos, modelagem conceitual, lógica, física e dimensional, arquitetura, grão, DW, dbt, métricas, SQL, deploy e operação. As doze etapas são iterativas. Testes e documentação acompanham o desenvolvimento; a camada semântica e a orquestração avançada são opcionais.
+
+### Engenharia de Dados
+
+A pasta [Engenharia de Dados](engenharia-de-dados/README.md) cobre a ingestão idempotente, a arquitetura em camadas (Bronze, RAW, Silver e Gold) e a orquestração com Airflow, até a entrega da tabela RAW ao dbt. O [template-projeto](template-projeto/README.md) traz esse fluxo completo funcionando, com dados de exemplo.
 
 ### Materiais compartilhados e recursos
 
@@ -59,16 +65,22 @@ Lite e Completo são independentes. Analytics Engineering pode preparar os model
 ```text
 projetos-de-dados-toolkit/
 ├── README.md
+├── comece-aqui.md         # ponto de partida: escolhe o caminho
+├── template-projeto/     # esqueleto de projeto pronto para copiar (Python, DuckDB, dbt)
 ├── analise-de-dados/
 │   ├── README.md
 │   ├── lite/             # guia, templates, checklist e imagem originais
-│   └── completo/         # guia, templates Word e exemplos
+│   └── completo/         # guia, templates e exemplos
 ├── analytics-engineering/
 │   ├── README.md
 │   ├── guias/
 │   ├── templates/
 │   ├── checklists/
 │   └── exemplos/
+├── engenharia-de-dados/
+│   ├── README.md
+│   ├── guias/
+│   └── checklists/
 ├── compartilhado/
 │   ├── README.md
 │   ├── guias/
@@ -96,14 +108,15 @@ Ao copiar templates para outro repositório, adapte os links ao novo destino ou 
 
 | Finalidade | Documento |
 |---|---|
+| Começar um projeto | [Comece aqui](comece-aqui.md) e [template de projeto](template-projeto/README.md) |
 | Iniciar uma análise rápida | [Guia Lite](analise-de-dados/lite/guias/framework-lite.md) e [template](analise-de-dados/lite/templates/template-analise-lite.md) |
 | Compreender uma nova base | [Primeiras perguntas](compartilhado/guias/guia-primeiras-perguntas.md) |
 | Investigar hipóteses | [Framework Completo](analise-de-dados/completo/guias/framework-analise-de-dados.md) |
 | Construir modelos analíticos | [Framework de Analytics Engineering](analytics-engineering/guias/framework-analytics-engineering.md) |
+| Ingerir e orquestrar dados | [Engenharia de Dados](engenharia-de-dados/README.md) |
 | Definir métricas | [Template de métrica de negócio](analytics-engineering/templates/definicao-metricas-negocio.md) |
 | Revisar qualidade | [Guia compartilhado](compartilhado/guias/qualidade-de-dados.md) |
 | Revisar mudanças e operação | [DataOps](recursos/dataops/README.md) |
-| Conferir a implementação | [Relatório de migração e validação](recursos/referencias/relatorio-migracao.md) |
 
 ## Contribuição e evolução
 
@@ -111,12 +124,8 @@ Proponha mudanças pequenas, com problema, conteúdo afetado, justificativa e va
 
 Antes de criar um guia, procure um documento existente. Centralize regras compartilhadas e mantenha exemplos didáticos pequenos. Revise links, fontes, adequação dos templates e ausência de dados sensíveis. Mudanças metodológicas precisam explicar o efeito na prática; alterações de dbt devem considerar versão e adaptador.
 
-Este trabalho não define uma licença. Verifique os direitos dos materiais de terceiros antes de redistribuí-los publicamente, especialmente PDFs de cursos. Não há credenciais, certificações ou resultados de projetos declarados aqui.
+Este trabalho não define uma licença. Confirme os direitos do guia geral em PDF antes de redistribuí-lo publicamente. Não há credenciais, certificações ou resultados de projetos declarados aqui.
 
 ## Origem e preservação
 
-Os dois frameworks foram encontrados nos ZIPs fornecidos no workspace e comparados com as cópias já organizadas. Os [arquivos originais](recursos/referencias/README.md) permanecem disponíveis para recuperação, e o [manifesto](recursos/referencias/manifesto-migracao.json) registra destinos e hashes. As adaptações de navegação estão descritas no relatório.
-
-Os históricos Git encontrados dentro das pastas dos frameworks também foram preservados integralmente em arquivos de recuperação. As pastas ativas pertencem ao Git central, sem repositórios embutidos.
-
-`projetos-de-dados-toolkit` é o nome desta biblioteca. O checkout local mantém o nome de pasta existente `projetos-de-dados-toolkit`; nenhuma configuração Git ou identidade remota foi alterada.
+Os frameworks Lite e Completo foram incorporados a partir de projetos anteriores. O estado anterior à limpeza de 05/11/2026 (ZIPs originais, manifesto de hashes e relatório de migração) está no histórico do Git deste repositório.
